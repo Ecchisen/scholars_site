@@ -7,6 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
 const ContactUs = () => {
+  // TODO: Implement form submission logic here (e.g., using a state management library or a simple onSubmit handler)
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted!");
+    // Add your form submission logic here, e.g., sending data to an API
+    // You might want to use a library like react-hook-form for more complex forms
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-6 text-center">Contact Us</h1>
@@ -23,6 +31,7 @@ const ContactUs = () => {
               <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-lg">Address</h3>
+                {/* TODO: Update with your school's actual address */}
                 <p className="text-gray-700">
                   123 School Lane, Education City, State, 12345
                 </p>
@@ -32,6 +41,7 @@ const ContactUs = () => {
               <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
+                {/* TODO: Update with your school's actual phone number */}
                 <p className="text-gray-700">+1 (555) 123-4567</p>
               </div>
             </div>
@@ -39,12 +49,13 @@ const ContactUs = () => {
               <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
+                {/* TODO: Update with your school's actual email address */}
                 <p className="text-gray-700">info@schoolname.edu</p>
               </div>
             </div>
             <div className="mt-8">
               <h3 className="font-semibold text-lg mb-2">Location Map</h3>
-              {/* Placeholder for an embedded map */}
+              {/* TODO: Replace with an embedded map (e.g., Google Maps iframe) */}
               <div className="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg">
                 <span className="text-gray-500">Map Placeholder</span>
               </div>
@@ -57,7 +68,7 @@ const ContactUs = () => {
             <CardTitle className="text-2xl mb-4">Inquiry Form</CardTitle>
           </CardHeader>
           <CardContent>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <Label htmlFor="name">Name</Label>
                 <Input id="name" placeholder="Your Name" />

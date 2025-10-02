@@ -5,29 +5,35 @@ import { Bus, Utensils, Dumbbell, BookOpen, FlaskConical } from "lucide-react";
 const facilitiesList = [
   {
     name: "Transportation",
+    // TODO: Update description with details about your school's transportation
     description: "Safe and reliable bus services covering various routes.",
     icon: <Bus className="h-8 w-8 text-primary" />,
   },
   {
     name: "Canteen",
+    // TODO: Update description with details about your school's canteen/meals
     description: "Nutritious and healthy meals prepared daily by our catering team.",
     icon: <Utensils className="h-8 w-8 text-primary" />,
   },
   {
     name: "Sports",
+    // TODO: Update description with details about your school's sports facilities
     description: "State-of-the-art indoor and outdoor sports facilities for various activities.",
     icon: <Dumbbell className="h-8 w-8 text-primary" />,
   },
   {
     name: "Library",
+    // TODO: Update description with details about your school's library
     description: "A vast collection of books, journals, and digital resources for all ages.",
     icon: <BookOpen className="h-8 w-8 text-primary" />,
   },
   {
     name: "Labs",
+    // TODO: Update description with details about your school's labs
     description: "Well-equipped science and computer labs for practical learning.",
     icon: <FlaskConical className="h-8 w-8 text-primary" />,
   },
+  // TODO: Add more facilities as needed
 ];
 
 const Facilities = () => {

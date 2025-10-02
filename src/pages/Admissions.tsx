@@ -20,6 +20,7 @@ const Admissions = () => {
               Ready to apply? Fill out our online admission form to get started.
             </p>
             <Button asChild size="lg">
+              {/* TODO: Update this link to your actual online admission form */}
               <Link to="/admissions/apply">Apply Now</Link>
             </Button>
           </CardContent>
@@ -34,6 +35,7 @@ const Admissions = () => {
               Find detailed information about our admission process, eligibility criteria, and fee structure.
             </p>
             <Button asChild variant="outline" size="lg">
+              {/* TODO: Update this link to your actual admission guidelines and fee details page/document */}
               <Link to="/admissions/details">View Details</Link>
             </Button>
           </CardContent>
@@ -43,6 +45,7 @@ const Admissions = () => {
       <div className="mt-12 text-center">
         <h2 className="text-3xl font-semibold mb-4">Admission Process</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          {/* TODO: Customize the admission process description */}
           Our admission process is designed to be straightforward and transparent. It typically involves submitting an application, an entrance assessment (for certain grades), and an interview. We encourage prospective parents to schedule a school tour.
         </p>
       </div>

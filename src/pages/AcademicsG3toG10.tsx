@@ -18,7 +18,9 @@ const AcademicsG3toG10 = () => {
           <li>**English Language and Literature:** Comprehensive development of reading, writing, speaking, and listening skills, alongside appreciation of diverse literary works.</li>
           <li>**Social Studies:** Engaging exploration of History, Geography, Civics, and Economics, promoting global awareness and civic responsibility.</li>
           <li>**Computer Science:** Programming, digital literacy, and understanding of computational thinking.</li>
+          {/* TODO: Update with actual second language options offered by your school */}
           <li>**Second Language:** Options for [e.g., Hindi, French, Spanish] to foster linguistic diversity.</li>
+          {/* TODO: Update with actual elective subjects offered by your school */}
           <li>**Elective Subjects:** Various options like Art, Music, Drama, and Physical Education to cater to diverse interests and talents.</li>
         </ul>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Teaching Style</h2>

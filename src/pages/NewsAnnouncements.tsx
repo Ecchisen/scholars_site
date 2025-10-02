@@ -22,6 +22,7 @@ const newsItems = [
     date: "September 20, 2024",
     description: "Congratulations to all participants and winners of this year's Science Fair!",
   },
+  // TODO: Add more news and announcement items as needed
 ];
 
 const NewsAnnouncements = () => {
@@ -49,8 +50,8 @@ const NewsAnnouncements = () => {
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
           All official circulars and detailed exam schedules are available for download in the student portal. Please log in to access them.
         </p>
-        {/* Placeholder for a button to student portal or downloads */}
         <div className="mt-6">
+          {/* TODO: Update this link to your actual student portal or downloads page */}
           <a href="#" className="text-blue-500 hover:text-blue-700 underline text-lg">
             Go to Student Portal / Downloads
           </a>

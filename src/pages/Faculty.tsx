@@ -7,26 +7,31 @@ const facultyMembers = [
     name: "Dr. Anya Sharma",
     title: "Head of Science Department",
     expertise: "Physics, Astrophysics",
+    // TODO: Replace with actual faculty member image URL
     image: "https://via.placeholder.com/150/0000FF/FFFFFF?text=AS",
   },
   {
     name: "Mr. David Lee",
     title: "Senior English Teacher",
     expertise: "Literature, Creative Writing",
+    // TODO: Replace with actual faculty member image URL
     image: "https://via.placeholder.com/150/FF0000/FFFFFF?text=DL",
   },
   {
     name: "Ms. Sarah Chen",
     title: "Mathematics Coordinator",
     expertise: "Calculus, Algebra",
+    // TODO: Replace with actual faculty member image URL
     image: "https://via.placeholder.com/150/00FF00/FFFFFF?text=SC",
   },
   {
     name: "Mrs. Emily White",
     title: "Primary School Lead",
     expertise: "Early Childhood Education",
+    // TODO: Replace with actual faculty member image URL
     image: "https://via.placeholder.com/150/FFFF00/000000?text=EW",
   },
+  // TODO: Add more faculty members as needed
 ];
 
 const Faculty = () => {

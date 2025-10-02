@@ -2,12 +2,14 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const images = [
+  // TODO: Replace with actual image sources and alt text for your school's gallery
   { src: "https://via.placeholder.com/400x300/A0C4FF/FFFFFF?text=Classroom+1", alt: "Classroom 1" },
   { src: "https://via.placeholder.com/400x300/BDB2FF/FFFFFF?text=Event+Day", alt: "Event Day" },
   { src: "https://via.placeholder.com/400x300/FFC6FF/FFFFFF?text=Sports+Activity", alt: "Sports Activity" },
   { src: "https://via.placeholder.com/400x300/FFADAD/FFFFFF?text=Library", alt: "Library" },
   { src: "https://via.placeholder.com/400x300/FFD6A5/FFFFFF?text=Science+Lab", alt: "Science Lab" },
   { src: "https://via.placeholder.com/400x300/FDFFB6/000000?text=Art+Class", alt: "Art Class" },
+  // TODO: Add more images as needed
 ];
 
 const Gallery = () => {
@@ -38,7 +40,7 @@ const Gallery = () => {
         <p className="text-lg text-gray-700">
           Check out our school videos on our official YouTube channel!
         </p>
-        {/* Placeholder for embedded video or link */}
+        {/* TODO: Replace with an embedded video (e.g., YouTube iframe) or a link to your video gallery */}
         <div className="mt-6 w-full max-w-2xl mx-auto aspect-video bg-gray-200 flex items-center justify-center rounded-lg">
           <span className="text-gray-500">Video Placeholder</span>
         </div>

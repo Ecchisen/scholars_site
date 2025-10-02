@@ -8,8 +8,10 @@ const Index = () => {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section / Banner */}
       <section className="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white" style={{ backgroundImage: "url('https://via.placeholder.com/1920x1080/2196F3/FFFFFF?text=School+Banner')" }}>
+        {/* TODO: Replace with your actual school banner image */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center p-4">
+          {/* TODO: Update with your school's welcome message */}
           <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">Welcome to Our School</h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">Nurturing Minds, Building Futures</p>
           <Button asChild size="lg" className="animate-fade-in-up animation-delay-400">
@@ -81,6 +83,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Latest News & Announcements</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* TODO: Update with actual news items */}
             <Card>
               <CardHeader>
                 <CardTitle className="text-xl">Annual Day Celebration</CardTitle>

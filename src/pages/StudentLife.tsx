@@ -5,24 +5,29 @@ import { Users, CalendarDays, Award, Globe } from "lucide-react";
 const studentLifeActivities = [
   {
     name: "Clubs & Societies",
+    // TODO: Update description with details about your school's clubs
     description: "A wide range of clubs including debate, science, art, and music.",
     icon: <Users className="h-8 w-8 text-primary" />,
   },
   {
     name: "Events & Festivals",
+    // TODO: Update description with details about your school's events
     description: "Annual events, cultural festivals, and celebrations throughout the year.",
     icon: <CalendarDays className="h-8 w-8 text-primary" />,
   },
   {
     name: "Extracurricular Activities",
+    // TODO: Update description with details about your school's extracurriculars
     description: "Sports, drama, dance, and various other activities to foster talents.",
     icon: <Award className="h-8 w-8 text-primary" />,
   },
   {
     name: "Educational Trips",
+    // TODO: Update description with details about your school's trips
     description: "Excursions and field trips to enhance learning beyond the classroom.",
     icon: <Globe className="h-8 w-8 text-primary" />,
   },
+  // TODO: Add more student life activities as needed
 ];
 
 const StudentLife = () => {
