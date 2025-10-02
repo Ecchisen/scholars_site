@@ -33,7 +33,7 @@ const ContactUs = () => {
                 <h3 className="font-semibold text-lg">Address</h3>
                 {/* TODO: Update with your school's actual address */}
                 <p className="text-gray-700">
-                  123 School Lane, Education City, State, 12345
+                  Sundarharaincha - 9, Morang, PLO Road
                 </p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const ContactUs = () => {
               <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
                 {/* TODO: Update with your school's actual phone number */}
-                <p className="text-gray-700">+1 (555) 123-4567</p>
+                <p className="text-gray-700">021-545255</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -50,7 +50,7 @@ const ContactUs = () => {
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 {/* TODO: Update with your school's actual email address */}
-                <p className="text-gray-700">info@schoolname.edu</p>
+                <p className="text-gray-700">scholarshome810@gmail.com</p>
               </div>
             </div>
             <div className="mt-8">

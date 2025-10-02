@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container flex h-14 items-center justify-between">
         <Link to="/" className="mr-4 flex items-center space-x-2">
           {/* TODO: Update 'School Name' with your actual school name or logo */}
-          <span className="font-bold text-lg">School Name</span>
+          <span className="font-bold text-lg">Scholars' Home</span>
         </Link>
         <NavigationMenu>
           <NavigationMenuList>

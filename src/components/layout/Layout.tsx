@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { MadeWithDyad } from "@/components/made-with-dyad";
+//import { MadeWithDyad } from "@/components/made-with-dyad";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-grow">{children}</main>
-      <MadeWithDyad />
+      {/*<MadeWithDyad />*/}
       <Footer />
     </div>
   );

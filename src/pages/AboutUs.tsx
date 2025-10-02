@@ -20,7 +20,7 @@ const AboutUs = () => {
           "It is with immense pleasure that I welcome you to our school's website. We believe in fostering a vibrant learning community where every child feels valued and inspired to reach their full potential. Our dedicated faculty and staff work tirelessly to create an environment that encourages curiosity, critical thinking, and creativity. We are committed to providing an education that not only imparts knowledge but also builds character and resilience. We look forward to partnering with you in your child's educational journey."
           <br />
           {/* TODO: Update [Principal's Name] with your school's principal's name */}
-          <span className="font-semibold not-italic block mt-2">- [Principal's Name], Principal</span>
+          <span className="font-semibold not-italic block mt-2">- [Tilak Rai], Principal</span>
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Achievements</h2>
         <p>

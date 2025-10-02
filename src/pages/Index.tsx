@@ -12,8 +12,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center p-4">
           {/* TODO: Update with your school's welcome message */}
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">Welcome to Our School</h1>
-          <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">Nurturing Minds, Building Futures</p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">Welcome to Scholars' Home</h1>
+          <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">Journey to Excellence</p>
           <Button asChild size="lg" className="animate-fade-in-up animation-delay-400">
             <Link to="/admissions">Admissions Open</Link>
           </Button>
