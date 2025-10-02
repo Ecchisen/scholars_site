@@ -76,7 +76,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* News and Announcements Section (Placeholder) */}
+      {/* News and Announcements Section */}
       <section className="bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Latest News & Announcements</h2>
