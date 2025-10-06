@@ -1,36 +1,74 @@
 import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+
+const images = [
+  { src: "https://via.placeholder.com/800x400/A0C4FF/FFFFFF?text=Math+Class", alt: "Math Class" },
+  { src: "https://via.placeholder.com/800x400/BDB2FF/FFFFFF?text=Science+Lab", alt: "Science Lab" },
+  { src: "https://via.placeholder.com/800x400/FFC6FF/FFFFFF?text=English+Literature", alt: "English Literature" },
+  { src: "https://via.placeholder.com/800x400/FFADAD/FFFFFF?text=Computer+Lab", alt: "Computer Lab" },
+  { src: "https://via.placeholder.com/800x400/FFD6A5/FFFFFF?text=History+Lesson", alt: "History Lesson" },
+  { src: "https://via.placeholder.com/800x400/FDFFB6/000000?text=Group+Project", alt: "Group Project" },
+  { src: "https://via.placeholder.com/800x400/C8E6C9/000000?text=Art+Studio", alt: "Art Studio" },
+  { src: "https://via.placeholder.com/800x400/B2EBF2/000000?text=Sports+Training", alt: "Sports Training" },
+  { src: "https://via.placeholder.com/800x400/D1C4E9/000000?text=Library+Research", alt: "Library Research" },
+  { src: "https://via.placeholder.com/800x400/F8BBD0/000000?text=Debate+Club", alt: "Debate Club" },
+];
 
 const AcademicsG3toG10 = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-6 text-center">Academics: Grade 3 to 10</h1>
-      <div className="max-w-3xl mx-auto text-lg text-gray-700 space-y-6">
-        <p>
-          For students in Grade 3 to 10, we offer a comprehensive and challenging curriculum designed to prepare them for higher education and future success. Our academic program focuses on developing critical thinking, problem-solving skills, and a deep understanding of core subjects, while also fostering creativity and independent learning.
-        </p>
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Curriculum</h2>
-        <p>
-          Our curriculum is meticulously designed to meet national and international standards, ensuring a robust and well-rounded education. It covers a broad range of subjects:
-        </p>
-        <ul className="list-disc list-inside space-y-2 pl-4">
-          <li>**Mathematics:** Advanced concepts in Algebra, Geometry, and Introduction to Calculus.</li>
-          <li>**Science:** In-depth studies in Physics, Chemistry, and Biology with extensive practical lab work.</li>
-          <li>**English Language and Literature:** Comprehensive development of reading, writing, speaking, and listening skills, alongside appreciation of diverse literary works.</li>
-          <li>**Social Studies:** Engaging exploration of History, Geography, Civics, and Economics, promoting global awareness and civic responsibility.</li>
-          <li>**Computer Science:** Programming, digital literacy, and understanding of computational thinking.</li>
-          {/* TODO: Update with actual second language options offered by your school */}
-          <li>**Second Language:** Options for [e.g., Hindi, French, Spanish] to foster linguistic diversity.</li>
-          {/* TODO: Update with actual elective subjects offered by your school */}
-          <li>**Elective Subjects:** Various options like Art, Music, Drama, and Physical Education to cater to diverse interests and talents.</li>
-        </ul>
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Teaching Style</h2>
-        <p>
-          We employ a student-centered teaching approach that encourages active participation, inquiry-based learning, and collaborative projects. Our highly qualified teachers use innovative methodologies, integrating technology, real-world examples, and interactive discussions to make learning engaging and relevant. We emphasize critical thinking, analytical skills, and independent research, preparing students to ask questions and seek answers.
-        </p>
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Evaluation System</h2>
-        <p>
-          Our evaluation system is continuous and comprehensive, assessing not only academic performance but also holistic development. It includes a mix of formative assessments (quizzes, class participation, projects), summative assessments (mid-term and final examinations), presentations, and practical examinations. Regular and constructive feedback is provided to students and parents through detailed reports and parent-teacher conferences to support continuous improvement and identify areas for growth.
-        </p>
+      <p className="text-xl text-gray-600 text-center mb-10">
+        A comprehensive and challenging curriculum for holistic development.
+      </p>
+
+      <div className="flex flex-col lg:flex-row gap-8 max-w-5xl mx-auto">
+        {/* Carousel Section */}
+        <div className="lg:w-1/2">
+          <Carousel className="w-full max-w-md mx-auto">
+            <CarouselContent>
+              {images.map((image, index) => (
+                <CarouselItem key={index}>
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-0">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+
+        {/* Text Section */}
+        <div className="lg:w-1/2 text-lg text-gray-700 space-y-6">
+          <p>
+            Our program for Grade 3 to 10 offers a comprehensive curriculum designed to prepare students for higher education and future success. We focus on developing critical thinking, problem-solving skills, and a deep understanding of core subjects, while fostering creativity and independent learning.
+          </p>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Curriculum Highlights</h2>
+          <ul className="list-disc list-inside space-y-2 pl-4">
+            <li>**Core Subjects:** In-depth studies in Mathematics, Science (Physics, Chemistry, Biology), English Language & Literature, and Social Studies (History, Geography, Civics, Economics).</li>
+            <li>**Technology & Languages:** Computer Science (programming, digital literacy) and options for a Second Language (e.g., Hindi, French, Spanish).</li>
+            <li>**Electives:** Diverse options like Art, Music, Drama, and Physical Education to nurture varied interests.</li>
+          </ul>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Teaching & Evaluation</h2>
+          <p>
+            We employ a student-centered approach with innovative methodologies, integrating technology and real-world examples. Our evaluation system is continuous, assessing academic performance and holistic development through formative and summative assessments, projects, and regular feedback.
+          </p>
+        </div>
       </div>
     </div>
   );

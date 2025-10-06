@@ -1,9 +1,13 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, BookOpen, Building2, Newspaper } from "lucide-react";
+import { GraduationCap, Building2, Newspaper } from "lucide-react";
+// Removed Dialog and AdmissionAppointmentForm import as they are no longer needed here
 
 const Index = () => {
+  // Removed isAppointmentFormOpen state as the button will now navigate directly
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section / Banner */}
@@ -14,8 +18,9 @@ const Index = () => {
           {/* TODO: Update with your school's welcome message */}
           <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">Welcome to Scholars' Home</h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">Journey to Excellence</p>
+          {/* Changed to a Link component to navigate to the admissions page */}
           <Button asChild size="lg" className="animate-fade-in-up animation-delay-400">
-            <Link to="/admissions">Admissions Open</Link>
+            <Link to="/admissions">Schedule Appointment</Link>
           </Button>
         </div>
       </section>
@@ -23,54 +28,41 @@ const Index = () => {
       {/* Quick Links Section */}
       <section className="container mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-center mb-8">Quick Links</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="text-center p-6 flex flex-col items-center">
-            <CardHeader className="p-0 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Card className="text-center p-6 flex flex-col items-center space-y-4 border-2 hover:border-primary transition-colors duration-200">
+            <CardHeader className="flex flex-col items-center p-0">
               <GraduationCap className="h-12 w-12 text-primary mb-2" />
-              <CardTitle className="text-xl">Admissions</CardTitle>
+              <CardTitle className="text-xl">Inquiry</CardTitle>
             </CardHeader>
-            <CardContent className="p-0">
-              <p className="text-gray-700 mb-4">Learn about our admission process and apply online.</p>
-              <Button asChild variant="link">
+            <CardContent className="p-0 flex flex-col items-center space-y-4">
+              <p className="text-gray-700">Learn about our admission process and schedule an appointment.</p>
+              <Button asChild variant="outline" className="border border-primary rounded-md hover:bg-primary/10">
                 <Link to="/admissions">Details</Link>
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="text-center p-6 flex flex-col items-center">
-            <CardHeader className="p-0 mb-4">
-              <BookOpen className="h-12 w-12 text-primary mb-2" />
-              <CardTitle className="text-xl">Academics</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <p className="text-gray-700 mb-4">Explore our curriculum for all grade levels.</p>
-              <Button asChild variant="link">
-                <Link to="/academics/pg-grade2">View Programs</Link>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 flex flex-col items-center">
-            <CardHeader className="p-0 mb-4">
+          <Card className="text-center p-6 flex flex-col items-center space-y-4 border-2 hover:border-primary transition-colors duration-200">
+            <CardHeader className="flex flex-col items-center p-0">
               <Building2 className="h-12 w-12 text-primary mb-2" />
               <CardTitle className="text-xl">Facilities</CardTitle>
             </CardHeader>
-            <CardContent className="p-0">
-              <p className="text-gray-700 mb-4">Discover our modern infrastructure and amenities.</p>
-              <Button asChild variant="link">
+            <CardContent className="p-0 flex flex-col items-center space-y-4">
+              <p className="text-gray-700">Discover our modern infrastructure and amenities.</p>
+              <Button asChild variant="outline" className="border border-primary rounded-md hover:bg-primary/10">
                 <Link to="/facilities">Explore</Link>
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="text-center p-6 flex flex-col items-center">
-            <CardHeader className="p-0 mb-4">
+          <Card className="text-center p-6 flex flex-col items-center space-y-4 border-2 hover:border-primary transition-colors duration-200">
+            <CardHeader className="flex flex-col items-center p-0">
               <Newspaper className="h-12 w-12 text-primary mb-2" />
               <CardTitle className="text-xl">News & Events</CardTitle>
             </CardHeader>
-            <CardContent className="p-0">
-              <p className="text-gray-700 mb-4">Stay updated with the latest school news and events.</p>
-              <Button asChild variant="link">
+            <CardContent className="p-0 flex flex-col items-center space-y-4">
+              <p className="text-gray-700">Stay updated with the latest school news and events.</p>
+              <Button asChild variant="outline" className="border border-primary rounded-md hover:bg-primary/10">
                 <Link to="/news-announcements">Read More</Link>
               </Button>
             </CardContent>
